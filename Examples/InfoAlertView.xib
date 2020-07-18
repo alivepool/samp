@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InfoAlertView" customModule="Examples" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQG-fR-Cma">
+                    <rect key="frame" x="30" y="242" width="354" height="412"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrl-1U-afW">
+                            <rect key="frame" x="304" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1ZD-7A-gdU"/>
+                                <constraint firstAttribute="width" constant="40" id="5HI-8m-JDb"/>
+                            </constraints>
+                            <state key="normal" image="xmark" catalog="system"/>
+                            <connections>
+                                <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="YA5-p4-8fc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmB-Q2-LKR">
+                            <rect key="frame" x="10" y="60" width="334" height="26.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLI-mK-cxP">
+                            <rect key="frame" x="10" y="106.5" width="334" height="295.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="YmB-Q2-LKR" firstAttribute="leading" secondItem="bQG-fR-Cma" secondAttribute="leading" constant="10" id="1CH-i9-plq"/>
+                        <constraint firstAttribute="bottom" secondItem="dLI-mK-cxP" secondAttribute="bottom" constant="10" id="5ft-Uk-Z2K"/>
+                        <constraint firstAttribute="trailing" secondItem="dLI-mK-cxP" secondAttribute="trailing" constant="10" id="BUJ-6y-dlH"/>
+                        <constraint firstItem="lrl-1U-afW" firstAttribute="top" secondItem="bQG-fR-Cma" secondAttribute="top" constant="10" id="DES-JP-2lv"/>
+                        <constraint firstAttribute="trailing" secondItem="YmB-Q2-LKR" secondAttribute="trailing" constant="10" id="Muz-LS-AYb"/>
+                        <constraint firstItem="dLI-mK-cxP" firstAttribute="top" secondItem="YmB-Q2-LKR" secondAttribute="bottom" constant="20" id="SnB-fz-Pod"/>
+                        <constraint firstItem="YmB-Q2-LKR" firstAttribute="top" secondItem="lrl-1U-afW" secondAttribute="bottom" constant="10" id="cz2-Qa-fUL"/>
+                        <constraint firstItem="dLI-mK-cxP" firstAttribute="leading" secondItem="bQG-fR-Cma" secondAttribute="leading" constant="10" id="kFE-1D-vNw"/>
+                        <constraint firstAttribute="trailing" secondItem="lrl-1U-afW" secondAttribute="trailing" constant="10" id="wtR-kK-FwV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bQG-fR-Cma" secondAttribute="bottom" constant="10" id="0v5-Tj-sgJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bQG-fR-Cma" secondAttribute="trailing" constant="30" id="AnF-ej-wSL"/>
+                <constraint firstItem="bQG-fR-Cma" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="QVF-s8-bcN"/>
+                <constraint firstItem="bQG-fR-Cma" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="THG-mi-VDY"/>
+                <constraint firstItem="bQG-fR-Cma" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="198" placeholder="YES" id="WbC-8f-aMW"/>
+                <constraint firstItem="bQG-fR-Cma" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="o47-8b-X8j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bodyLabel" destination="dLI-mK-cxP" id="HEj-4F-BBf"/>
+                <outlet property="closeButton" destination="lrl-1U-afW" id="lMQ-2g-AZX"/>
+                <outlet property="containerView" destination="bQG-fR-Cma" id="uOn-a6-tv1"/>
+                <outlet property="headingLabel" destination="YmB-Q2-LKR" id="uuw-Nh-aZu"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
